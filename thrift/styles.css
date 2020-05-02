@@ -1,0 +1,308 @@
+@charset "UTF-8";
+
+/* Author:R.J. Morgan
+  Date Created: February 29, 2020
+  Assignment Name: Midterm
+  Filename: styles.css
+  Validated: 1932, 29 Feb 20
+*/
+
+/*General structure */
+body, header {
+  font-family: calibri, sans-serif;
+  line-height: normal;
+  background-color: #ffe6e6;
+}
+
+header, footer, body, h1, p, .subhead, h3 {
+  text-align: center;
+  margin: 0px;
+}
+
+h3, .pagedesc {
+  padding: 0px;
+  font-size: 1.5em;
+}
+
+h1, h2, h3, h4, h5, h6, li, .contentbox, .contentbox2 {
+  font-family: 'Permanent Marker', serif;
+}
+
+.contactinst, .photoboxabout, .clearfix, .container, .photobox, .map {
+  margin: auto;
+}
+
+.main-content, .mainnav, .productnav, .image, .image2, .contentbox, .contentbox2, .imagestore {
+  width: 100%;
+}
+
+/*Header stuff*/
+header {
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.subhead h2, header ul {
+  margin: 7px auto;
+}
+
+
+/* Navigation List styles */
+ul {
+  list-style: none;
+  overflow: hidden;
+}
+
+li {
+  display: inline;
+}
+
+li a {
+  text-decoration: none;
+  color: black;
+}
+
+.mainnav ul, .productnav ul {
+  box-shadow: 5px 0px 5px 5px black, 5px 0px 5px 5px orange;
+}
+
+.mainnav li a {
+  padding: 10%;
+}
+
+.productnav li a {
+  padding: 5%;
+}
+
+a:hover, .productnav {
+  background-color: #d9d9d9;
+}
+
+a:hover {
+  border: 1px solid black;
+}
+
+.productnav a:hover, .mainnav, .text {
+  background-color: rgb(255, 179, 179);
+}
+
+
+/*end nav stuff*/
+.top {
+  display: table;
+}
+
+.box1 {
+  background-image: linear-gradient(to bottom right, rgb(255, 179, 179), #d9d9d9);
+  font-size: 2.5em;
+  text-shadow: 2px 2px white;
+  border: 3px solid white;
+}
+
+.box1, .box2 {
+  width: 48%;
+  display: table-cell;
+}
+
+.image, .top {
+  height: auto;
+}
+
+/*boxes*/
+.photobox, .contentbox, .image3, .imagex, .container {
+  float: left;
+}
+
+.pagedesc {
+  margin: 20px 0px;
+}
+
+.box2, .contactinst {
+  font-size: 1.9em;
+}
+
+.contactinst {
+  width: 90%;
+}
+
+.contactinst p, .clearfix p {
+  text-align: left;
+}
+
+.mainnav, .top {
+  width: auto;
+}
+
+.main-content, .contactinst, .clearfix, .mainnav {
+  clear: both;
+}
+
+/*End Text Boxes*/
+/*Borders*/
+.box2, .contactinst, .clearfix {
+  border: 3px double black;
+}
+
+/*End Borders*/
+/* Photo ads fromm index*/
+.container { /*this container holds the index photos*/
+  position: relative; /*this is a necessary line to get the text overlays to work */
+  width: 31%;
+  padding: 1%;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle { /*This is the text box that appears on the photo ad*/
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%)
+}
+
+.container:hover .image {
+  opacity: 0.5;
+}
+
+.container:hover .middle {
+  opacity: 1;
+}
+
+.text { /*this text is the text overlaid on the photo ads */
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+/* End photo ad code */
+
+/*About and Contact page Images*/
+.photobox { /*photoboxes are from the contact page*/
+  margin: 2.5%;
+  width: 45%;
+  overflow: hidden;
+}
+
+.photoboxabout { /*photoboxabout comes from the about page */
+  width: 65%;
+}
+
+.photobox, .photoboxabout, .box2, h2 {
+  background-color: white;
+}
+
+.photobox, .photoboxabout, .image3, .imagex {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.photobox, .photoboxabout {
+  margin-bottom: 25px;
+}
+
+.contentbox, .contactinst {
+  padding: 20px 20px;
+}
+
+.map {
+  width: 80%;
+}
+
+/*End Index page Images*/
+/*Product Pages*/
+.image3, .imagex { /* imagex are the images that from product pages that are not sized the same as the majority */
+  height: 300px;
+  margin-right: 20px;
+}
+
+.clearfix {
+  overflow: auto;
+  width: 75%;
+  padding: 15px;
+  font-size: 1.6em;
+}
+/*End Product Pages*/
+/* footer */
+footer {
+  padding: 10px 0px;
+  margin: 10px 0px;
+}
+
+/*Responsive Styles*/
+@media screen and (max-width:1000px) {
+  .productnav li a {
+    padding: 3%;
+  }
+}
+
+@media screen and (max-width:860px) {
+  #title {
+    width: 450px;
+  }
+}
+
+@media screen and (max-width:768px) {
+  .box1, .box2 {
+    height: auto;
+    width: 97%;
+    padding: 5px;
+    float: left;
+  }
+
+  .box1 {
+    font-size: 1.8em;
+  }
+
+  .box2 {
+    font-size: 1.4em;
+  }
+
+  .container {
+    width: 48%;
+  }
+
+  .photobox {
+    clear: both;
+  }
+
+  .photoboxabout, .photobox {
+    width: 95%;
+  }
+
+  .clearfix {
+    width: 90%;
+    font-size: 1em;
+  }
+
+  .imagex {
+    width: 435px;
+    height: 200px;
+    object-fit: cover;
+  }
+}
+
+@media screen and (max-width:700px) {
+  .weird h2, .subhead h2 {
+    font-size: 1.1em;
+  }
+
+  .productnav li a {
+    padding: 1%;
+  }
+
+  .mainnav li a {
+    padding: 5%;
+  }
+
+  .container {
+    width: 95%;
+  }
+}

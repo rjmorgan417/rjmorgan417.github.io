@@ -1,0 +1,350 @@
+@charset "UTF-8";
+
+/*
+	Author: RJ Morgan
+	Dated Created: January 30, 2020
+	Updated: February 14, 2020
+	Assignment Name: My Live Website
+	Filename: styles.css
+	Validated: 2042, February 14
+
+  Reference list
+  title - a class name from the index page
+
+  25MAR20 - I worked on the product page. The last thing that I accoplished was getting the boxes to the appropriate size and I centered the
+  content of the medium boxes inside of the large box. I tried to reorganize the code a bit and streamline things. The next thing that needs
+  be done is add additional content, then jazz things up a bit.
+
+  26 MAR 30 - Added some pictures to the services area, and made a responsive logo. Also changed the formatting of the product page a bit.
+  What I want to do next is to make different products on the product page, and put hyper link photos to the new products: books, tracts, clothes, etc.
+  I also need to add some social media links. I want to spruce up the about us page to look more like south gates. Finally, I want to put some stuff
+  on the homepage at the to that gets people's attention.
+*/
+
+/* Padding - Common */
+section, footer {
+  padding: 10px;
+}
+
+header, .mainimage {
+  padding: 10px 0;
+}
+
+.banner, .prodtext p {
+    padding: 2%;
+}
+
+
+/* Margins - Common */
+
+/* Width - Common */
+body {
+    width: 100%;
+}
+
+/* Font Size, Family, Emphasis, etc - Common */
+h1, h2 {
+  font-weight: normal;
+}
+
+h1 {
+  font-size: 3em;
+  font-family: garamond, serif;
+}
+
+h2, h3, h4, h5, h6 {
+  font-family: calibri, sans-serif;
+}
+
+h2 {
+  font-size: 2.0em;
+}
+
+h3, h4, h5, h6, .title {
+  font-size: 1.6em;
+}
+
+.box, .topbox p {
+  font-size: 1.3em;
+}
+
+.copy, .banner {
+  font-style: italic;
+}
+
+/* Text Alignment - Common */
+body, .services {
+    text-align: center;
+}
+
+.topbox, .prodtext {
+    text-align: left;
+}
+
+/* Color Control - Common */
+h1, h2, .banner, header {
+  background-color: black;
+}
+
+a:hover, body {
+  background-color: hsl(180, 61%, 85%);
+}
+
+h1, h2, .banner, footer, a {
+    color: white;
+}
+
+a:hover, .services p, section  {
+  color: black;
+}
+
+.box, .bookbox {
+  background-color: white;
+  border: 2px black solid;
+}
+
+
+/* Z-Index Common */
+.text, .paragraph p {
+  z-index: 1;
+}
+
+/* Structural Styles */
+/* Common to more than one page or item */
+
+* {
+  margin: 0px;
+  box-sizing: border-box; /*This ensures that all elements are look the same width at 100% - Es muy importante */
+
+}
+
+body {
+  font-size: 1em;
+  font-family: arial;
+}
+/* Header Specific */
+header, .banner {
+  margin: 0px 0px 20px 0px;
+}
+
+header {
+  position: relative;
+}
+
+.productbox, .paragraph {
+  justify-content: center;
+}
+
+/* "Navigation" Section Styles*/
+nav>ul {
+  list-style-type: none;
+  overflow: hidden;
+}
+
+nav a {
+  padding: 2em;
+}
+
+li {
+  display: inline;
+}
+
+
+/* Link Styles */
+a {
+  text-decoration: none;
+}
+
+
+
+/* footer */
+footer {
+  background: black;
+  margin: 20px 0px 0px 0px;
+}
+
+.copy {
+  font-size: .8em;
+}
+
+/* Index and About Pages - Main paragraph */
+.paragraph {
+  display: flex;
+  flex-flow: row wrap;
+  flex-direction: row;
+  border-top: 10px solid rgb(97, 81, 78);
+  border-bottom: 10px solid rgb(97, 81, 78);
+
+}
+
+.text {
+  padding: 10px 5px 10px 5px;
+  width: 54%;
+  order: 1;
+}
+
+.mainimage {
+  width: 44.5%;
+  order: 2;
+}
+
+.title {
+  font-weight: bold;
+}
+
+/* Index Page - Service Boxes */
+.services {
+  margin: 20px 0;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  background-color: rgb(97, 81, 78);
+  padding: .7%;
+
+}
+
+.services p {
+  margin: 3px;
+}
+
+.box {
+  width: 33.33%;
+
+}
+
+/*Products Page - Nested boxes*/
+.productbox, .bookbox {
+  display: flex;
+  flex-flow: row wrap;
+  flex-direction: row;
+}
+
+/*child of productbox */
+.bookbox {
+  width: 500px;
+  margin: .5%;
+  overflow: auto;
+  box-shadow: 0 4px 8px 0;
+}
+
+/* Children of bookbox */
+.prodtext {
+  padding: 10px 5px 10px 5px;
+  width: 65%;
+  order: 2;
+}
+
+.covers {
+  width: 32%;
+  order: 1;
+}
+
+/* images */
+
+.topbox img, .covers img, .services img {
+  object-fit: cover;
+}
+
+.topbox img {
+  box-shadow: 0 4px 8px 0;
+  height: 100%;
+  width: 100%;
+}
+
+.covers img {
+  height: 100%;
+  width: 100%;
+}
+
+.wya img {
+  position: absolute;
+  left: 20px;
+  top: 5px;
+  height: 120px;
+}
+
+.services img {
+  width: 200px;
+  height: 60px;
+}
+
+@media screen and (max-width:1240px) {
+.box {
+  width: 100%;
+}
+
+.title {
+  background-color: #fff9e6;
+}
+
+.first {
+  order: 1;
+}
+
+.second {
+  order: 2;
+}
+
+.third {
+  order: 3;
+}
+
+.services img {
+  display: none;
+}
+}
+
+@media screen and (max-width:1028px) {
+.mainimage, .text {
+  width: 100%;
+}
+
+.mainimage {
+  height: 200px;
+  order: 1;
+}
+
+  .text {
+    padding-right: 5px;
+    padding-top: 10px;
+    order: 1;
+  }
+}
+
+
+@media screen and (max-width:968px) {
+  .wya img {
+    left: 0px;
+    top: 20px;
+    height: 70px;
+  }
+}
+
+@media screen and (max-width:800px) {
+  nav a {
+    font-size: 12px;
+  }
+
+  h2 {
+    font-size: 1.5em;
+  }
+  }
+
+
+@media screen and (max-width:768px) {
+  nav a {
+    padding: 1em;
+  }
+
+}
+
+
+
+@media screen and (max-width:700px) {
+  h2 {
+    font-size: 1em;
+}
+  nav a {
+    padding: .7em;
+  }
+}
