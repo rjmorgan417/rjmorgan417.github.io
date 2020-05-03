@@ -9,7 +9,11 @@
 
   <!---Development note 2 MAAY 20
 
-  The last thing I did was to widen out teh container on this page. I tried to figure out how to align the text, but that is where I stopped. I finished the session by updating all in Git-->
+  The last thing I did was to widen out teh container on this page. I tried to figure out how to align the text, but that is where I stopped. I finished the session by updating all in Git
+
+3 MAY 20
+I spent WAY too muchtime trying to get teh header picture right, and monkeying around with border colors. Finally just did a picture, instead of text over picture. Added teh second column of selections in teh portfolio page, and put in teh Leroy Jenkins card.
+Things to do next... 1. Transfer global updates to other pages. 2. Flesh out the home page. 3. Make program videos. 4. Update program cards 5. Add portofolio Jumbotron and  -->
 
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -21,15 +25,35 @@
 </head>
 
 <body>
+  <div class="maintxt">
+  <img src="images/james5.png" class="img-fluid" alt="Responsive image">
+  <!-- <span class="overlay-text">My super workds.</span> -->
+  </div>
+  <!-- <div class="image-caption d-none d-md-block">
+    <div class="overlay">
+           <h2>Hover effect 4</h2>
+    </div>
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-primary">
+
+
+    <div class="row" id="box-search">
+        <div class="thumbnail text-center">
+            <img src="images/james2.png" alt="" class="img-responsive">
+            <div class="caption">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, quisquam?</p>
+            </div>
+        </div>
+    </div> -->
+
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-info">
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item">
             <a class="nav-link" href="index.html">Home</a>
           </li>
           <li class="nav-item active">
-            <a class="nav-link" href="devskills.html">Developer Skills<span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="devskills.html">Portfolio<span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="aboutme.html">About Me</a>
@@ -40,11 +64,11 @@
     </nav>
 
 
-    <div class=".container-fluid">
+    <div class="container-fluid">
       <div class="row">
 
         <div class="col">
-          <h1>My Web Page Development Skills</h1>
+          <h1 class="text-center">Webpage Development</h1>
 
           <div class="row row-cols-1 row-cols-md-2">
 
@@ -92,7 +116,52 @@
 
         </div>
         <div class="col">
-          <h1>My Web Page Development Skills</h1>
+          <h1 class="text-center">Computer Programming</h1>
+
+          <div class="row row-cols-1 row-cols-md-2">
+
+            <div class="col mb-4">
+              <div class="card">
+                <img src="images/the_rookery.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text">My First Computer Program in "Scratch"</p>
+                  <a href="https://scratch.mit.edu/projects/362064157/" target="_blank">The Rookery</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col mb-4">
+              <div class="card">
+                <img src="images/resort.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text">Bootstrap Webpage</p>
+                  <a href="resort/index.html" target="_blank">Resort Webpage</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col mb-4">
+              <div class="card">
+                <img src="images/business.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text">First Business / Service Webpage</p>
+                  <a href="business/index.html" target="_blank">Personal Service Webpage</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col mb-4">
+              <div class="card">
+                <img src="images/othermothers.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text">Thrift Store Webpage</p>
+                  <a href="thrift/index.html" target="_blank">Thrift Store Webpage</a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
         </div>
       </div>
     </div>
@@ -106,13 +175,13 @@
 
 
     <!-- Footer -->
-      <div class="container mt-3">
-        <div class="page-footer bg-primary rounded">
+
+        <div class="page-footer bg-info">
 
           <!-- Copyright -->
           <div class="footer-copyright text-center py-3">© 2020 Copyright: RJ Morgan</div>
         </div>
-      </div>
+
 
     <!-- Footer -->
 

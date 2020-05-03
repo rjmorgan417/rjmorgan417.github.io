@@ -1,0 +1,44 @@
+/* .thumbnail {
+    position: relative;
+}
+
+.caption {
+    position: absolute;
+    top: 38%;
+    Right: 35%;
+    width: 100%;
+    color: white;
+} */
+
+/* .image {
+  width: 100%;
+  object-fit: cover;
+} */
+
+html {
+  font-size: 1rem;
+}
+
+
+/*Responsive Styles*/
+@media screen and (max-width:1000px) {
+  html {
+    font-size: 1.6rem;
+  }
+}
+
+@media screen and (max-width:860px) {
+  html {
+    font-size: 1.4rem;
+  }
+}
+
+/* @media screen and (max-width:768px) {
+
+} */
+
+@media screen and (max-width:700px) {
+  html {
+    font-size: .5rem;
+  }
+}
