@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <meta charset="UTF-8">
   <!-- Author:RJ Morgan
   Date Created: April 30, 2020
   Assignment Name: Final
@@ -15,10 +16,15 @@
 I spent WAY too muchtime trying to get teh header picture right, and monkeying around with border colors. Finally just did a picture, instead of text over picture. Added teh second column of selections in teh portfolio page, and put in teh Leroy Jenkins card.
 Things to do next... 1. Transfer global updates to other pages. 2. Flesh out the home page. 3. Make program videos. 4. Update program cards 5. Add portofolio Jumbotron and  -->
 
-  <meta charset="UTF-8">
+<!--
+4 MAY 20
+
+I completed objectives for today. Next: 1. Seocnd video for final project 2. Find fourth highlight for computer programming or make columns of 1 and 2 3. Begin about me page. -->
+
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>My Profile Skills</title>
+  <title>My Portfolio</title>
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
@@ -27,17 +33,20 @@ Things to do next... 1. Transfer global updates to other pages. 2. Flesh out the
 <body>
   <img src="images/james5.png" class="img-fluid mb-0" alt="Responsive image">
 
-  <nav class="navbar navbar-expand-lg navbar-light bg-info mt-0">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-info mt-0">
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link" href="index.html">Home</a>
+          <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item active">
-          <a class="nav-link" href="devskills.html">Portfolio<span class="sr-only">(current)</span></a>
+          <a class="nav-link" href="devskills.html">Portfolio</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="aboutme.html">About Me</a>
+        </li>
+        <li class="nav-item ">
+          <a class="nav-link" href="https://www.linkedin.com/in/rj-morgan/" target="_blank">RJ's LinkedIn Profile</a>
         </li>
 
       </ul>
@@ -62,7 +71,7 @@ Things to do next... 1. Transfer global updates to other pages. 2. Flesh out the
           <div class="row row-cols-1 row-cols-md-2 border border-info p-3 m-3">
 
             <div class="col mb-4">
-              <div class="card">
+              <div class="card h-100">
                 <img src="images/firstsite.png" class="card-img-top" alt="...">
                 <div class="card-body">
                   <p class="card-text">My First Webpage Assignment</p>
@@ -72,7 +81,7 @@ Things to do next... 1. Transfer global updates to other pages. 2. Flesh out the
             </div>
 
             <div class="col mb-4">
-              <div class="card">
+              <div class="card h-100">
                 <img src="images/resort.png" class="card-img-top" alt="...">
                 <div class="card-body">
                   <p class="card-text">Bootstrap Webpage</p>
@@ -82,7 +91,7 @@ Things to do next... 1. Transfer global updates to other pages. 2. Flesh out the
             </div>
 
             <div class="col mb-4">
-              <div class="card">
+              <div class="card h-100">
                 <img src="images/business.png" class="card-img-top" alt="...">
                 <div class="card-body">
                   <p class="card-text">First Business / Service Webpage</p>
@@ -92,7 +101,7 @@ Things to do next... 1. Transfer global updates to other pages. 2. Flesh out the
             </div>
 
             <div class="col mb-4">
-              <div class="card">
+              <div class="card h-100">
                 <img src="images/othermothers.png" class="card-img-top" alt="...">
                 <div class="card-body">
                   <p class="card-text">Thrift Store Webpage</p>
@@ -107,10 +116,10 @@ Things to do next... 1. Transfer global updates to other pages. 2. Flesh out the
         <div class="col">
           <h1 class="text-center">Computer Programming</h1>
 
-          <div class="row row-cols-1 row-cols-md-2 border border-info p-3 m-3">
+          <div class="row row-cols-1 row-cols-md-2  border border-info p-3 m-3">
 
             <div class="col mb-4">
-              <div class="card">
+              <div class="card h-100">
                 <img src="images/the_rookery.png" class="card-img-top" alt="...">
                 <div class="card-body">
                   <p class="card-text">My First Program in "Scratch"</p>
@@ -119,10 +128,12 @@ Things to do next... 1. Transfer global updates to other pages. 2. Flesh out the
               </div>
             </div>
 
+
+
             <div class="col mb-4">
               <div class="card h-100">
                 <!-- <img src="images/resort.png" class="card-img-top" alt="..."> -->
-                <div class="embed-responsive embed-responsive-16by9 d-inline-block h-51">
+                <div class="embed-responsive embed-responsive-16by9 d-inline-block h-100">
                   <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/Y8PvTMriST0" allowfullscreen></iframe>
                 </div>
                 <div class="card-body">
@@ -132,17 +143,7 @@ Things to do next... 1. Transfer global updates to other pages. 2. Flesh out the
             </div>
 
             <div class="col mb-4">
-              <div class="card">
-                <img src="images/picture1.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <p class="card-text">ADD TEXT</p>
-                  <a href="business/index.html" target="_blank">Add</a>
-                </div>
-              </div>
-            </div>
-
-            <div class="col mb-4">
-              <div class="card">
+              <div class="card h-100">
                 <img src="images/picture1.png" class="card-img-top" alt="...">
                 <div class="card-body">
                   <p class="card-text">ADD TEXT</p>
@@ -150,6 +151,20 @@ Things to do next... 1. Transfer global updates to other pages. 2. Flesh out the
                 </div>
               </div>
             </div>
+
+            <div class="col mb-4">
+              <div class="card h-100">
+                <!-- <img src="images/resort.png" class="card-img-top" alt="..."> -->
+                <div class="embed-responsive embed-responsive-16by9 d-inline-block h-100">
+                  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/Y8PvTMriST0" allowfullscreen></iframe>
+                </div>
+                <div class="card-body">
+                  <p class="card-text">Strength Gear - Python Program</p>
+                </div>
+              </div>
+            </div>
+
+
 
           </div>
 
@@ -168,19 +183,6 @@ Things to do next... 1. Transfer global updates to other pages. 2. Flesh out the
       <div class="footer-copyright text-center mt-3 py-3">© 2020 Copyright: RJ Morgan</div>
     </div>
     <!-- Footer -->
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
