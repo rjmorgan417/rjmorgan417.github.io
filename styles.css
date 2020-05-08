@@ -19,12 +19,16 @@ html {
   font-size: 1rem;
 }
 
+.myrow {
+  height: 40%;
+}
+
 
 
 /*Responsive Styles*/
 @media screen and (max-width:1000px) {
 
-    
+
   /* html {
     font-size: 1.6rem;
   } */
