@@ -26,12 +26,12 @@ html {
 
 
 /*Responsive Styles*/
-@media screen and (max-width:1000px) {
+@media screen and (max-width:1160px) {
 
 
-  /* html {
-    font-size: 1.6rem;
-  } */
+.specheading {
+    font-size: 20px;
+  }
 }
 
 @media screen and (max-width:860px) {
